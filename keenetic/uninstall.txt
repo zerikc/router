@@ -1,0 +1,30 @@
+! Удаление групп и маршрутов, созданных install.txt
+no dns-proxy route object-group ai Wireguard0
+no object-group fqdn ai
+no dns-proxy route object-group discord Wireguard0
+no object-group fqdn discord
+no dns-proxy route object-group kinopub Wireguard0
+no object-group fqdn kinopub
+no dns-proxy route object-group media Wireguard0
+no object-group fqdn media
+no dns-proxy route object-group meta Wireguard0
+no object-group fqdn meta
+no dns-proxy route object-group telegram Wireguard0
+no object-group fqdn telegram
+no dns-proxy route object-group twitter Wireguard0
+no object-group fqdn twitter
+no dns-proxy route object-group work Wireguard0
+no object-group fqdn work
+no dns-proxy route object-group youtube Wireguard0
+no object-group fqdn youtube
+no ip route 91.108.4.0/22 Wireguard0
+no ip route 91.108.8.0/22 Wireguard0
+no ip route 91.108.12.0/22 Wireguard0
+no ip route 91.108.16.0/22 Wireguard0
+no ip route 91.108.20.0/22 Wireguard0
+no ip route 91.108.56.0/22 Wireguard0
+no ip route 91.105.192.0/23 Wireguard0
+no ip route 95.161.64.0/20 Wireguard0
+no ip route 149.154.160.0/20 Wireguard0
+no ip route 185.76.151.0/24 Wireguard0
+system configuration save
