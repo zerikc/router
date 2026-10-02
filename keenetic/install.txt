@@ -1,0 +1,201 @@
+! Сгенерировано scripts/build.sh для интерфейса Wireguard0
+object-group fqdn ai
+ include openai.com
+ include chatgpt.com
+ include chat.com
+ include sora.com
+ include oaistatic.com
+ include oaiusercontent.com
+ include anthropic.com
+ include claude.ai
+ include claude.com
+ include claudeusercontent.com
+ include gemini.google.com
+ include gemini.google
+ include aistudio.google.com
+ include ai.google.dev
+ include generativelanguage.googleapis.com
+ include alkalimakersuite-pa.clients6.google.com
+ include alkalicore-pa.clients6.google.com
+ include proactivebackend-pa.googleapis.com
+ include notebooklm.google
+ include notebooklm.google.com
+ include labs.google
+ include deepmind.com
+ include deepmind.google
+ include copilot.microsoft.com
+ include githubcopilot.com
+ include cursor.com
+ include cursor.sh
+ include cursor-cdn.com
+ include windsurf.com
+ include codeium.com
+ include jetbrains.com
+ include jetbrains.ai
+ include deepl.com
+exit
+dns-proxy route object-group ai Wireguard0 auto
+object-group fqdn discord
+ include discord.com
+ include discord.gg
+ include discord.dev
+ include discord.new
+ include discord.gift
+ include discord.media
+ include discordapp.com
+ include discordapp.net
+ include discordcdn.com
+ include discordstatus.com
+ include dis.gd
+exit
+dns-proxy route object-group discord Wireguard0 auto
+object-group fqdn kinopub
+ include kino.pub
+ include kinopub.link
+ include kino.watch
+ include proxykp.xyz
+ include kpap.link
+ include kpapp.link
+ include kpdl.link
+ include support-kp.com
+ include alador.space
+ include ios-kp.store
+ include srvkp.com
+ include kp-msx.onrender.com
+ include digital-cdn.net
+ include cdn2site.com
+ include cdn2cdn.com
+ include cdn3t.store
+ include cdn32.lol
+ include cdn-service.space
+ include cdnservices.link
+ include cdntogo.net
+ include staticdn.site
+ include pushbr.com
+ include i0.wp.com
+exit
+dns-proxy route object-group kinopub Wireguard0 auto
+object-group fqdn media
+ include netflix.com
+ include netflix.net
+ include nflxvideo.net
+ include nflximg.net
+ include nflximg.com
+ include nflxext.com
+ include nflxso.net
+ include fast.com
+ include soundcloud.com
+ include sndcdn.com
+ include pixiv.net
+ include pximg.net
+ include myanimelist.net
+ include roblox.com
+ include rbxcdn.com
+ include flibusta.is
+ include pornhub.com
+ include phncdn.com
+exit
+dns-proxy route object-group media Wireguard0 auto
+object-group fqdn meta
+ include facebook.com
+ include facebook.net
+ include fb.com
+ include fb.me
+ include fbcdn.net
+ include fbsbx.com
+ include messenger.com
+ include m.me
+ include instagram.com
+ include cdninstagram.com
+ include instagr.am
+ include ig.me
+ include threads.net
+ include threads.com
+ include whatsapp.com
+ include whatsapp.net
+ include wa.me
+ include meta.com
+ include meta.ai
+exit
+dns-proxy route object-group meta Wireguard0 auto
+object-group fqdn telegram
+ include telegram.org
+ include t.me
+ include telegram.me
+ include telegram.dog
+ include telegra.ph
+ include graph.org
+ include telesco.pe
+ include tdesktop.com
+ include fragment.com
+ include contest.com
+ include comments.app
+ include cdn-telegram.org
+ include telegram-cdn.org
+ include usercontent.dev
+exit
+dns-proxy route object-group telegram Wireguard0 auto
+object-group fqdn twitter
+ include x.com
+ include twitter.com
+ include twimg.com
+ include t.co
+ include twttr.com
+ include ads-twitter.com
+ include pscp.tv
+ include periscope.tv
+ include x.ai
+ include grok.com
+exit
+dns-proxy route object-group twitter Wireguard0 auto
+object-group fqdn work
+ include adobe.com
+ include adobe.io
+ include adobe.net
+ include adobelogin.com
+ include adobecc.com
+ include typekit.net
+ include canva.com
+ include miro.com
+ include sketch.com
+ include imazing.com
+ include notepad-plus-plus.org
+ include linkedin.com
+ include licdn.com
+ include lnkd.in
+ include aqara.com
+ include signal.org
+ include signal.me
+ include signal.group
+ include signal.art
+ include whispersystems.org
+exit
+dns-proxy route object-group work Wireguard0 auto
+object-group fqdn youtube
+ include youtube.com
+ include youtu.be
+ include yt.be
+ include youtube-nocookie.com
+ include youtubekids.com
+ include youtubei.googleapis.com
+ include youtube.googleapis.com
+ include youtubeembeddedplayer.googleapis.com
+ include jnn-pa.googleapis.com
+ include googlevideo.com
+ include ytimg.com
+ include ggpht.com
+ include yt3.googleusercontent.com
+ include wide-youtube.l.google.com
+exit
+dns-proxy route object-group youtube Wireguard0 auto
+ip route 91.108.4.0/22 Wireguard0 auto
+ip route 91.108.8.0/22 Wireguard0 auto
+ip route 91.108.12.0/22 Wireguard0 auto
+ip route 91.108.16.0/22 Wireguard0 auto
+ip route 91.108.20.0/22 Wireguard0 auto
+ip route 91.108.56.0/22 Wireguard0 auto
+ip route 91.105.192.0/23 Wireguard0 auto
+ip route 95.161.64.0/20 Wireguard0 auto
+ip route 149.154.160.0/20 Wireguard0 auto
+ip route 185.76.151.0/24 Wireguard0 auto
+system configuration save
