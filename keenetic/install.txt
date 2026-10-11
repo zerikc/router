@@ -1,15 +1,15 @@
 ! Сгенерировано scripts/build.sh для интерфейса Wireguard0
-object-group fqdn ai
+object-group fqdn geo-ai
+ include anthropic.com
+ include claude.ai
+ include claude.com
+ include claudeusercontent.com
  include openai.com
  include chatgpt.com
  include chat.com
  include sora.com
  include oaistatic.com
  include oaiusercontent.com
- include anthropic.com
- include claude.ai
- include claude.com
- include claudeusercontent.com
  include gemini.google.com
  include gemini.google
  include aistudio.google.com
@@ -23,6 +23,8 @@ object-group fqdn ai
  include labs.google
  include deepmind.com
  include deepmind.google
+ include grok.com
+ include x.ai
  include copilot.microsoft.com
  include githubcopilot.com
  include cursor.com
@@ -30,12 +32,38 @@ object-group fqdn ai
  include cursor-cdn.com
  include windsurf.com
  include codeium.com
- include jetbrains.com
  include jetbrains.ai
- include deepl.com
 exit
-dns-proxy route object-group ai Wireguard0 auto
-object-group fqdn discord
+dns-proxy route object-group geo-ai Wireguard0 auto
+object-group fqdn geo-media
+ include netflix.com
+ include netflix.net
+ include nflxvideo.net
+ include nflximg.net
+ include nflximg.com
+ include nflxext.com
+ include nflxso.net
+ include fast.com
+ include pixiv.net
+ include pximg.net
+exit
+dns-proxy route object-group geo-media Wireguard0 auto
+object-group fqdn geo-software
+ include jetbrains.com
+ include adobe.com
+ include adobe.io
+ include adobe.net
+ include adobelogin.com
+ include adobecc.com
+ include typekit.net
+ include canva.com
+ include miro.com
+ include sketch.com
+ include imazing.com
+ include aqara.com
+exit
+dns-proxy route object-group geo-software Wireguard0 auto
+object-group fqdn ru-discord
  include discord.com
  include discord.gg
  include discord.dev
@@ -48,8 +76,8 @@ object-group fqdn discord
  include discordstatus.com
  include dis.gd
 exit
-dns-proxy route object-group discord Wireguard0 auto
-object-group fqdn kinopub
+dns-proxy route object-group ru-discord Wireguard0 auto
+object-group fqdn ru-kinopub
  include kino.pub
  include kinopub.link
  include kino.watch
@@ -74,29 +102,8 @@ object-group fqdn kinopub
  include pushbr.com
  include i0.wp.com
 exit
-dns-proxy route object-group kinopub Wireguard0 auto
-object-group fqdn media
- include netflix.com
- include netflix.net
- include nflxvideo.net
- include nflximg.net
- include nflximg.com
- include nflxext.com
- include nflxso.net
- include fast.com
- include soundcloud.com
- include sndcdn.com
- include pixiv.net
- include pximg.net
- include myanimelist.net
- include roblox.com
- include rbxcdn.com
- include flibusta.is
- include pornhub.com
- include phncdn.com
-exit
-dns-proxy route object-group media Wireguard0 auto
-object-group fqdn meta
+dns-proxy route object-group ru-kinopub Wireguard0 auto
+object-group fqdn ru-meta
  include facebook.com
  include facebook.net
  include fb.com
@@ -117,8 +124,25 @@ object-group fqdn meta
  include meta.com
  include meta.ai
 exit
-dns-proxy route object-group meta Wireguard0 auto
-object-group fqdn telegram
+dns-proxy route object-group ru-meta Wireguard0 auto
+object-group fqdn ru-other
+ include signal.org
+ include signal.me
+ include signal.group
+ include signal.art
+ include whispersystems.org
+ include linkedin.com
+ include licdn.com
+ include lnkd.in
+ include roblox.com
+ include rbxcdn.com
+ include flibusta.is
+ include notepad-plus-plus.org
+ include pornhub.com
+ include phncdn.com
+exit
+dns-proxy route object-group ru-other Wireguard0 auto
+object-group fqdn ru-telegram
  include telegram.org
  include t.me
  include telegram.me
@@ -134,8 +158,8 @@ object-group fqdn telegram
  include telegram-cdn.org
  include usercontent.dev
 exit
-dns-proxy route object-group telegram Wireguard0 auto
-object-group fqdn twitter
+dns-proxy route object-group ru-telegram Wireguard0 auto
+object-group fqdn ru-twitter
  include x.com
  include twitter.com
  include twimg.com
@@ -144,34 +168,9 @@ object-group fqdn twitter
  include ads-twitter.com
  include pscp.tv
  include periscope.tv
- include x.ai
- include grok.com
 exit
-dns-proxy route object-group twitter Wireguard0 auto
-object-group fqdn work
- include adobe.com
- include adobe.io
- include adobe.net
- include adobelogin.com
- include adobecc.com
- include typekit.net
- include canva.com
- include miro.com
- include sketch.com
- include imazing.com
- include notepad-plus-plus.org
- include linkedin.com
- include licdn.com
- include lnkd.in
- include aqara.com
- include signal.org
- include signal.me
- include signal.group
- include signal.art
- include whispersystems.org
-exit
-dns-proxy route object-group work Wireguard0 auto
-object-group fqdn youtube
+dns-proxy route object-group ru-twitter Wireguard0 auto
+object-group fqdn ru-youtube
  include youtube.com
  include youtu.be
  include yt.be
@@ -187,7 +186,7 @@ object-group fqdn youtube
  include yt3.googleusercontent.com
  include wide-youtube.l.google.com
 exit
-dns-proxy route object-group youtube Wireguard0 auto
+dns-proxy route object-group ru-youtube Wireguard0 auto
 ip route 91.108.4.0/22 Wireguard0 auto
 ip route 91.108.8.0/22 Wireguard0 auto
 ip route 91.108.12.0/22 Wireguard0 auto

@@ -1,4 +1,4 @@
-# X / Twitter / Grok
+# Заблокировано в РФ: X / Twitter
 x.com
 twitter.com
 twimg.com
@@ -7,5 +7,3 @@ twttr.com
 ads-twitter.com
 pscp.tv
 periscope.tv
-x.ai
-grok.com

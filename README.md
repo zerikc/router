@@ -1,25 +1,32 @@
 # Маршрутизация через VPN по доменам на Keenetic
 
-Вместо ~700 статических IP-маршрутов (`legacy/staticRoutes.bat`) — списки доменов,
-сгруппированные по сервисам. Keenetic сам смотрит DNS-ответы и отправляет через VPN
-только адреса, которые получились из этих доменов. Поддомены включаются
-автоматически: `youtube.com` покрывает `www.youtube.com`, `m.youtube.com` и т.д.
+Через VPN идут **только** сервисы, которые:
 
-Нужен **KeeneticOS 4.0 или новее** (функция «маршрутизация по доменам»).
+- **заблокированы или замедлены в России** — файлы `domains/ru-*.txt`;
+- **сами не пускают пользователей из России** (Claude, ChatGPT, Adobe, Netflix…) —
+  файлы `domains/geo-*.txt`.
+
+Всё остальное (банки, Госуслуги, российские сайты, обычный интернет) идёт напрямую через
+провайдера, поэтому никаких исключений для Кинопоиска и т.п. больше не нужно.
+
+Keenetic сам смотрит DNS-ответы и отправляет через VPN только адреса, полученные
+из этих доменов. Поддомены включаются автоматически: `claude.ai` покрывает
+`api.claude.ai` и т.д. Нужен **KeeneticOS 4.0 или новее**.
 
 ## Структура
 
 | Файл | Что внутри |
 |---|---|
-| `domains/youtube.txt` | YouTube |
-| `domains/meta.txt` | Facebook, Instagram, WhatsApp, Threads |
-| `domains/twitter.txt` | X / Twitter, Grok |
-| `domains/discord.txt` | Discord |
-| `domains/telegram.txt` | Сайты Telegram и веб-версия |
-| `domains/ai.txt` | ChatGPT, Claude, Gemini, Copilot, Cursor, Windsurf, JetBrains, DeepL |
-| `domains/work.txt` | Adobe, Canva, Miro, Sketch, iMazing, LinkedIn, Signal, Aqara, Notepad++ |
-| `domains/media.txt` | Netflix, SoundCloud, pixiv, MyAnimeList, Roblox, Флибуста и др. |
-| `domains/kinopub.txt` | kino.pub и его CDN |
+| `domains/ru-youtube.txt` | YouTube |
+| `domains/ru-meta.txt` | Facebook, Instagram, Threads, WhatsApp |
+| `domains/ru-twitter.txt` | X / Twitter |
+| `domains/ru-discord.txt` | Discord |
+| `domains/ru-telegram.txt` | Сайты Telegram и веб-версия |
+| `domains/ru-kinopub.txt` | kino.pub и его CDN |
+| `domains/ru-other.txt` | Signal, LinkedIn, Roblox, Флибуста, Notepad++, Pornhub |
+| `domains/geo-ai.txt` | Claude, ChatGPT, Gemini, Grok, Copilot, Cursor, Windsurf, JetBrains AI |
+| `domains/geo-software.txt` | JetBrains, Adobe, Canva, Miro, Sketch, iMazing, Aqara |
+| `domains/geo-media.txt` | Netflix, pixiv |
 | `ip/telegram.txt` | Подсети Telegram (единственное исключение, см. ниже) |
 | `keenetic/install.txt` | Готовые команды для CLI роутера (генерируются) |
 | `keenetic/uninstall.txt` | Откат того, что делает `install.txt` |
@@ -27,7 +34,9 @@
 | `keenetic/all-domains.txt` | Все домены одним списком — для вставки в веб-интерфейс |
 | `legacy/staticRoutes.bat` | Старый IP-список, для истории |
 
-Строки с `#` — комментарии, роутер их не увидит: скрипт их вырезает.
+Строки с `#` — комментарии, роутер их не увидит: скрипт их вырезает. Сервисы, про
+которые не ясно, нужен ли им VPN (DeepL, SoundCloud, MyAnimeList), закомментированы:
+если без VPN не открываются, уберите `#` перед доменом и пересоберите команды.
 
 ## Почему Telegram остался на IP
 
@@ -111,7 +120,7 @@ show ip route
 3. `scripts/build.sh <интерфейс>` и вставьте на роутер только новые строки, например:
 
    ```
-   object-group fqdn media
+   object-group fqdn geo-media
     include example.com
    exit
    system configuration save
@@ -121,14 +130,39 @@ show ip route
 
 ## Откуда взялись списки
 
-Почти все подсети в `legacy/staticRoutes.bat` совпадают с файлами из
-[RockBlack-VPN/ip-address](https://github.com/RockBlack-VPN/ip-address): YouTube/Google,
-Facebook, Instagram, WhatsApp, Telegram, Discord, ChatGPT, Gemini, Claude, Adobe,
-kino.pub, Twitter, Signal, Notepad++, pixiv и другие. Их домены вошли в списки выше.
-Часть сервисов (LinkedIn, Netflix, Roblox, JetBrains, Miro, SoundCloud, MyAnimeList,
-DeepL) совпала лишь частично: возможно, это просто общие CDN-сети. Если что-то
-из них вам не нужно, удалите строки.
+Подсети из `legacy/staticRoutes.bat` сверены с файлами
+[RockBlack-VPN/ip-address](https://github.com/RockBlack-VPN/ip-address), чтобы понять,
+какие сервисы за ними стоят. В списки попали только те, что заблокированы в РФ или
+сами блокируют РФ, плюс ваш DNS-список. Широкие подсети Google, Amazon, Cloudflare
+и Microsoft из старого списка не перенесены: через них работает половина интернета,
+и гнать их через VPN незачем.
 
 Не перенесены: FaceTime/iCloud (подсети Apple `17.x`). Они работают по IP и push-каналу,
 доменами их не покрыть. Если FaceTime перестанет работать, добавьте подсеть
 `17.0.0.0/8` статическим маршрутом.
+
+## Если вы уже ставили прошлую версию
+
+Группы тогда назывались иначе. Удалите их перед установкой новой:
+
+```
+no dns-proxy route object-group ai Wireguard0
+no dns-proxy route object-group work Wireguard0
+no dns-proxy route object-group media Wireguard0
+no dns-proxy route object-group kinopub Wireguard0
+no dns-proxy route object-group youtube Wireguard0
+no dns-proxy route object-group meta Wireguard0
+no dns-proxy route object-group twitter Wireguard0
+no dns-proxy route object-group discord Wireguard0
+no dns-proxy route object-group telegram Wireguard0
+no object-group fqdn ai
+no object-group fqdn work
+no object-group fqdn media
+no object-group fqdn kinopub
+no object-group fqdn youtube
+no object-group fqdn meta
+no object-group fqdn twitter
+no object-group fqdn discord
+no object-group fqdn telegram
+system configuration save
+```
