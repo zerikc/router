@@ -1,0 +1,17 @@
+# Сервис сам не пускает из РФ: медиа
+# Netflix
+netflix.com
+netflix.net
+nflxvideo.net
+nflximg.net
+nflximg.com
+nflxext.com
+nflxso.net
+fast.com
+# pixiv (был в вашем IP-списке)
+pixiv.net
+pximg.net
+# Раскомментируйте, если без VPN не работает:
+#soundcloud.com
+#sndcdn.com
+#myanimelist.net

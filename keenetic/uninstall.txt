@@ -1,22 +1,24 @@
 ! Удаление групп и маршрутов, созданных install.txt
-no dns-proxy route object-group ai Wireguard0
-no object-group fqdn ai
-no dns-proxy route object-group discord Wireguard0
-no object-group fqdn discord
-no dns-proxy route object-group kinopub Wireguard0
-no object-group fqdn kinopub
-no dns-proxy route object-group media Wireguard0
-no object-group fqdn media
-no dns-proxy route object-group meta Wireguard0
-no object-group fqdn meta
-no dns-proxy route object-group telegram Wireguard0
-no object-group fqdn telegram
-no dns-proxy route object-group twitter Wireguard0
-no object-group fqdn twitter
-no dns-proxy route object-group work Wireguard0
-no object-group fqdn work
-no dns-proxy route object-group youtube Wireguard0
-no object-group fqdn youtube
+no dns-proxy route object-group geo-ai Wireguard0
+no object-group fqdn geo-ai
+no dns-proxy route object-group geo-media Wireguard0
+no object-group fqdn geo-media
+no dns-proxy route object-group geo-software Wireguard0
+no object-group fqdn geo-software
+no dns-proxy route object-group ru-discord Wireguard0
+no object-group fqdn ru-discord
+no dns-proxy route object-group ru-kinopub Wireguard0
+no object-group fqdn ru-kinopub
+no dns-proxy route object-group ru-meta Wireguard0
+no object-group fqdn ru-meta
+no dns-proxy route object-group ru-other Wireguard0
+no object-group fqdn ru-other
+no dns-proxy route object-group ru-telegram Wireguard0
+no object-group fqdn ru-telegram
+no dns-proxy route object-group ru-twitter Wireguard0
+no object-group fqdn ru-twitter
+no dns-proxy route object-group ru-youtube Wireguard0
+no object-group fqdn ru-youtube
 no ip route 91.108.4.0/22 Wireguard0
 no ip route 91.108.8.0/22 Wireguard0
 no ip route 91.108.12.0/22 Wireguard0

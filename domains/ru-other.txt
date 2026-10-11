@@ -1,0 +1,21 @@
+# Заблокировано в РФ: прочее
+# Signal
+signal.org
+signal.me
+signal.group
+signal.art
+whispersystems.org
+# LinkedIn
+linkedin.com
+licdn.com
+lnkd.in
+# Roblox
+roblox.com
+rbxcdn.com
+# Флибуста
+flibusta.is
+# Notepad++
+notepad-plus-plus.org
+# Pornhub
+pornhub.com
+phncdn.com

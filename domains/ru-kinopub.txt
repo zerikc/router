@@ -1,4 +1,4 @@
-# kino.pub и его CDN
+# Заблокировано в РФ: kino.pub и его CDN (из вашего списка)
 kino.pub
 kinopub.link
 kino.watch
