@@ -23,10 +23,10 @@ Keenetic сам смотрит DNS-ответы и отправляет чере
 | `domains/ru-discord.txt` | Discord |
 | `domains/ru-telegram.txt` | Сайты Telegram и веб-версия |
 | `domains/ru-kinopub.txt` | kino.pub и его CDN |
-| `domains/ru-other.txt` | Signal, LinkedIn, Roblox, Флибуста, Notepad++, Pornhub |
+| `domains/ru-other.txt` | Signal, Viber, Snapchat, Proton, Medium, Speedtest, LinkedIn, Roblox, Флибуста, Notepad++, Pornhub |
 | `domains/geo-ai.txt` | Claude, ChatGPT, Gemini, Grok, Copilot, Cursor, Windsurf, JetBrains AI |
-| `domains/geo-software.txt` | JetBrains, Adobe, Canva, Miro, Sketch, iMazing, Aqara |
-| `domains/geo-media.txt` | Netflix, pixiv |
+| `domains/geo-software.txt` | JetBrains, Adobe, Canva, Miro, Figma, Notion, Sketch, iMazing, Aqara |
+| `domains/geo-media.txt` | Netflix, Spotify, pixiv |
 | `ip/telegram.txt` | Подсети Telegram (единственное исключение, см. ниже) |
 | `keenetic/install.txt` | Готовые команды для CLI роутера (генерируются) |
 | `keenetic/uninstall.txt` | Откат того, что делает `install.txt` |

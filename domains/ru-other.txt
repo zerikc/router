@@ -19,3 +19,23 @@ notepad-plus-plus.org
 # Pornhub
 pornhub.com
 phncdn.com
+# Viber (звонки могут идти по IP и не попасть в VPN)
+viber.com
+# Snapchat
+snapchat.com
+snap.com
+sc-cdn.net
+sc-static.net
+snapkit.com
+snap-dev.net
+# Proton (почта, VPN, диск)
+proton.me
+pm.me
+protonmail.com
+protonmail.ch
+protonvpn.com
+# Medium (блоги на собственных доменах сюда не попадают)
+medium.com
+# Speedtest — сайт и приложение; сами замеры идут на серверы с разными доменами
+speedtest.net
+ookla.com

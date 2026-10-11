@@ -11,6 +11,18 @@ fast.com
 # pixiv (был в вашем IP-списке)
 pixiv.net
 pximg.net
+# Spotify
+spotify.com
+spotify.link
+spoti.fi
+scdn.co
+pscdn.co
+spotifycdn.com
+spotifycdn.net
+audio-ak-spotify-com.akamaized.net
+audio4-ak-spotify-com.akamaized.net
+heads-ak-spotify-com.akamaized.net
+heads4-ak-spotify-com.akamaized.net
 # Раскомментируйте, если без VPN не работает:
 #soundcloud.com
 #sndcdn.com
