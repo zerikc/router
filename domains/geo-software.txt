@@ -20,3 +20,12 @@ imazing.com
 aqara.com
 # DeepL — раскомментируйте, если без VPN не работает
 #deepl.com
+# Notion
+notion.so
+notion.com
+notion.site
+notion.new
+notion-static.com
+notionusercontent.com
+# Figma
+figma.com

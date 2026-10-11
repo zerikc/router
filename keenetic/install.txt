@@ -46,6 +46,17 @@ object-group fqdn geo-media
  include fast.com
  include pixiv.net
  include pximg.net
+ include spotify.com
+ include spotify.link
+ include spoti.fi
+ include scdn.co
+ include pscdn.co
+ include spotifycdn.com
+ include spotifycdn.net
+ include audio-ak-spotify-com.akamaized.net
+ include audio4-ak-spotify-com.akamaized.net
+ include heads-ak-spotify-com.akamaized.net
+ include heads4-ak-spotify-com.akamaized.net
 exit
 dns-proxy route object-group geo-media Wireguard0 auto
 object-group fqdn geo-software
@@ -61,6 +72,13 @@ object-group fqdn geo-software
  include sketch.com
  include imazing.com
  include aqara.com
+ include notion.so
+ include notion.com
+ include notion.site
+ include notion.new
+ include notion-static.com
+ include notionusercontent.com
+ include figma.com
 exit
 dns-proxy route object-group geo-software Wireguard0 auto
 object-group fqdn ru-discord
@@ -140,6 +158,21 @@ object-group fqdn ru-other
  include notepad-plus-plus.org
  include pornhub.com
  include phncdn.com
+ include viber.com
+ include snapchat.com
+ include snap.com
+ include sc-cdn.net
+ include sc-static.net
+ include snapkit.com
+ include snap-dev.net
+ include proton.me
+ include pm.me
+ include protonmail.com
+ include protonmail.ch
+ include protonvpn.com
+ include medium.com
+ include speedtest.net
+ include ookla.com
 exit
 dns-proxy route object-group ru-other Wireguard0 auto
 object-group fqdn ru-telegram
