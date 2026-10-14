@@ -10,17 +10,19 @@
 
 | Файл | Сервисы | Доменов |
 |---|---|:-:|
-| `01-ai.txt` | Claude, ChatGPT, Gemini, Grok, Copilot, Cursor, Windsurf, JetBrains AI | 33 |
+| `01-ai.txt` | Claude, ChatGPT, Gemini, Grok, Copilot, Cursor, Windsurf, Perplexity, Hugging Face, Mistral, Midjourney, ElevenLabs, OpenRouter и др. | 51 |
 | `02-youtube.txt` | YouTube | 14 |
-| `03-instagram-facebook-whatsapp.txt` | Instagram, Facebook, WhatsApp, Threads, Messenger | 19 |
+| `03-instagram-facebook-whatsapp.txt` | Instagram, Facebook, WhatsApp, Threads, Messenger | 21 |
 | `04-telegram.txt` | Telegram: сайты и веб-версия | 14 |
 | `05-twitter.txt` | X / Twitter | 8 |
 | `06-discord.txt` | Discord, включая голосовые каналы | 11 |
 | `07-kinopub.txt` | kino.pub и его CDN | 23 |
-| `08-media.txt` | Netflix, Spotify, pixiv | 21 |
+| `08-media.txt` | Netflix, Spotify, pixiv, Twitch, TikTok, Reddit, SoundCloud, Deezer, Tidal, Bluesky, Patreon, Vimeo, Disney+ и др. | 50 |
 | `09-blocked-other.txt` | Signal, Viber, Snapchat, Proton, LinkedIn, Roblox, Medium, Speedtest, Флибуста, Notepad++, Pornhub | 29 |
 | `10-software.txt` | JetBrains, Adobe, Canva, Miro, Figma, Notion, Sketch, iMazing, Aqara | 19 |
-| `telegram-ip.bat` | IP-подсети Telegram для статических маршрутов | 10 |
+| `11-messengers.txt` | Slack, Zoom, LINE, Element, Matrix, Threema, Wire, Viber CDN | 11 |
+| `telegram-ip.bat` | IP-подсети Telegram для статических маршрутов | 9 |
+| `meta-ip.bat` | IP-подсети Meta (Instagram, Facebook, WhatsApp) для звонков | 34 |
 
 В каждом файле один домен на строку, без комментариев: содержимое можно вставлять
 в роутер как есть. Поддомены отдельно не нужны: `claude.ai` покрывает и `api.claude.ai`.
@@ -32,11 +34,12 @@
 1. **Удалите старые IP-маршруты**: «Маршрутизация» → отметить старые маршруты → «Удалить».
 2. **Добавьте списки доменов.** В веб-интерфейсе откройте маршрутизацию по доменам
    (DNS-маршруты), создайте список, вставьте содержимое файла и выберите
-   VPN-подключение. Повторите для каждого файла `01`–`10`. Ненужные списки можно
+   VPN-подключение. Повторите для каждого файла `01`–`11`. Ненужные списки можно
    не добавлять.
 3. **Добавьте Telegram.** Приложение Telegram подключается к серверам по IP, а не
    по доменам, поэтому для него нужны статические маршруты. Загрузите
    `telegram-ip.bat`: «Маршрутизация» → «Загрузить из файла», интерфейс — ваш VPN.
+   Для звонков WhatsApp и Instagram так же загрузите `meta-ip.bat`.
 
 ## Настройки, без которых не заработает
 
