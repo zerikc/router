@@ -1,0 +1,11 @@
+slack.com
+slack-edge.com
+zoom.us
+zoom.com
+line.me
+line-scdn.net
+element.io
+matrix.org
+threema.ch
+wire.com
+vibercdn.com
