@@ -1,4 +1,3 @@
-# Заблокировано в РФ: Discord (голос идёт через *.discord.media — тоже по DNS)
 discord.com
 discord.gg
 discord.dev
