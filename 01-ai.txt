@@ -1,17 +1,13 @@
-# Сервис сам не пускает из РФ: нейросети и AI-инструменты
-# Claude / Anthropic
 anthropic.com
 claude.ai
 claude.com
 claudeusercontent.com
-# ChatGPT / OpenAI
 openai.com
 chatgpt.com
 chat.com
 sora.com
 oaistatic.com
 oaiusercontent.com
-# Gemini / Google AI
 gemini.google.com
 gemini.google
 aistudio.google.com
@@ -25,18 +21,13 @@ notebooklm.google.com
 labs.google
 deepmind.com
 deepmind.google
-# Grok
 grok.com
 x.ai
-# Copilot
 copilot.microsoft.com
 githubcopilot.com
-# Cursor
 cursor.com
 cursor.sh
 cursor-cdn.com
-# Windsurf
 windsurf.com
 codeium.com
-# JetBrains AI
 jetbrains.ai
