@@ -18,8 +18,8 @@
 | `06-discord.txt` | Discord, включая голосовые каналы | 11 |
 | `07-kinopub.txt` | kino.pub и его CDN | 23 |
 | `08-media.txt` | Netflix, Spotify, pixiv, Twitch, TikTok, Reddit, SoundCloud, Deezer, Tidal, Bluesky, Patreon, Vimeo, Disney+ и др. | 50 |
-| `09-blocked-other.txt` | Signal, Viber, Snapchat, Proton, LinkedIn, Roblox, Medium, Speedtest, Флибуста, Notepad++, Pornhub | 29 |
-| `10-software.txt` | JetBrains, Adobe, Canva, Miro, Figma, Notion, Sketch, iMazing, Aqara | 19 |
+| `09-blocked-other.txt` | Signal, Viber, Snapchat, Proton, LinkedIn, Roblox, Medium, Speedtest, Флибуста, NNM-Club, Notepad++, Pornhub | 30 |
+| `10-software.txt` | JetBrains, Adobe, Canva, Miro, Figma, Notion, Sketch, iMazing, Aqara, Termius | 20 |
 | `11-messengers.txt` | Slack, Zoom, LINE, Element, Matrix, Threema, Wire, Viber CDN | 11 |
 | `telegram-ip.bat` | IP-подсети Telegram для статических маршрутов | 9 |
 | `meta-ip.bat` | IP-подсети Meta (Instagram, Facebook, WhatsApp) для звонков | 34 |
