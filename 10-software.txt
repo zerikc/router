@@ -10,6 +10,7 @@ miro.com
 sketch.com
 imazing.com
 aqara.com
+termius.com
 notion.so
 notion.com
 notion.site
