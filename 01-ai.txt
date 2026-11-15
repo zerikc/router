@@ -49,3 +49,16 @@ leonardo.ai
 ideogram.ai
 lovable.dev
 v0.dev
+aida.googleapis.com
+aisandbox-pa.googleapis.com
+antigravity-pa.googleapis.com
+antigravity-unleash.goog
+antigravity.google
+antigravity.googleapis.com
+bard.google.com
+generativeai.google
+jules.google
+jules.google.com
+makersuite.google.com
+robinfrontend-pa.googleapis.com
+stitch.withgoogle.com

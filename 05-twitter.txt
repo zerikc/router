@@ -6,3 +6,15 @@ twttr.com
 ads-twitter.com
 pscp.tv
 periscope.tv
+cms-twdigitalassets.com
+tweetdeck.com
+twitter.biz
+twitter.jp
+twittercommunity.com
+twitterinc.com
+twitteroauth.com
+twitterstat.us
+twtrdns.net
+twttr.net
+twvid.com
+vine.co

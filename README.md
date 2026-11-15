@@ -10,15 +10,15 @@
 
 | Файл | Сервисы | Доменов |
 |---|---|:-:|
-| `01-ai.txt` | Claude, ChatGPT, Gemini, Grok, Copilot, Cursor, Windsurf, Perplexity, Hugging Face, Mistral, Midjourney, ElevenLabs, OpenRouter и др. | 51 |
-| `02-youtube.txt` | YouTube | 14 |
-| `03-instagram-facebook-whatsapp.txt` | Instagram, Facebook, WhatsApp, Threads, Messenger | 21 |
-| `04-telegram.txt` | Telegram: сайты и веб-версия | 14 |
-| `05-twitter.txt` | X / Twitter | 8 |
-| `06-discord.txt` | Discord, включая голосовые каналы | 11 |
+| `01-ai.txt` | Claude, ChatGPT, Gemini, Grok, Copilot, Cursor, Windsurf, Perplexity, Hugging Face, Mistral, Midjourney, ElevenLabs, OpenRouter и др. | 64 |
+| `02-youtube.txt` | YouTube | 19 |
+| `03-instagram-facebook-whatsapp.txt` | Instagram, Facebook, WhatsApp, Threads, Messenger | 23 |
+| `04-telegram.txt` | Telegram: сайты и веб-версия | 18 |
+| `05-twitter.txt` | X / Twitter | 20 |
+| `06-discord.txt` | Discord, включая голосовые каналы | 21 |
 | `07-kinopub.txt` | kino.pub, его зеркала и CDN | 26 |
-| `08-media.txt` | Netflix, Spotify, pixiv, Twitch, TikTok, Reddit, SoundCloud, Deezer, Tidal, Bluesky, Patreon, Vimeo, Disney+ и др. | 50 |
-| `09-blocked-other.txt` | Signal, Viber, Snapchat, Proton, LinkedIn, Roblox, Medium, Speedtest, Флибуста, NNM-Club, Notepad++, Pornhub | 30 |
+| `08-media.txt` | Netflix, Spotify, pixiv, Twitch, TikTok, Reddit, SoundCloud, Deezer, Tidal, Bluesky, Patreon, Vimeo, Disney+ и др. | 60 |
+| `09-blocked-other.txt` | Signal, Viber, Snapchat, Proton, LinkedIn, Roblox, Medium, Speedtest, Флибуста, NNM-Club, Notepad++, Pornhub | 32 |
 | `10-software.txt` | JetBrains, Adobe, Canva, Miro, Figma, Notion, Sketch, iMazing, Aqara, Termius | 20 |
 | `11-messengers.txt` | Slack, Zoom, LINE, Element, Matrix, Threema, Wire, Viber CDN | 11 |
 | `telegram-ip.bat` | IP-подсети Telegram для статических маршрутов | 9 |

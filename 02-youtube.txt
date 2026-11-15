@@ -12,3 +12,8 @@ ytimg.com
 ggpht.com
 yt3.googleusercontent.com
 wide-youtube.l.google.com
+returnyoutubedislikeapi.com
+youtube-ui.l.google.com
+yt-video-upload.l.google.com
+ytimg.l.google.com
+yting.com
