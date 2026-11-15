@@ -16,7 +16,7 @@
 | `04-telegram.txt` | Telegram: сайты и веб-версия | 14 |
 | `05-twitter.txt` | X / Twitter | 8 |
 | `06-discord.txt` | Discord, включая голосовые каналы | 11 |
-| `07-kinopub.txt` | kino.pub и его CDN | 23 |
+| `07-kinopub.txt` | kino.pub, его зеркала и CDN | 26 |
 | `08-media.txt` | Netflix, Spotify, pixiv, Twitch, TikTok, Reddit, SoundCloud, Deezer, Tidal, Bluesky, Patreon, Vimeo, Disney+ и др. | 50 |
 | `09-blocked-other.txt` | Signal, Viber, Snapchat, Proton, LinkedIn, Roblox, Medium, Speedtest, Флибуста, NNM-Club, Notepad++, Pornhub | 30 |
 | `10-software.txt` | JetBrains, Adobe, Canva, Miro, Figma, Notion, Sketch, iMazing, Aqara, Termius | 20 |
