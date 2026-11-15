@@ -21,6 +21,9 @@
 | `09-blocked-other.txt` | Signal, Viber, Snapchat, Proton, LinkedIn, Roblox, Medium, Speedtest, Флибуста, NNM-Club, Notepad++, Pornhub | 32 |
 | `10-software.txt` | JetBrains, Adobe, Canva, Miro, Figma, Notion, Sketch, iMazing, Aqara, Termius | 20 |
 | `11-messengers.txt` | Slack, Zoom, LINE, Element, Matrix, Threema, Wire, Viber CDN | 11 |
+| `12-hdrezka.txt` | HDRezka и его зеркала | 17 |
+| `13-anime.txt` | Аниме, манга, дорамы: AniLibria, Jut.su, Shikimori, MangaDex, Kemono и др. | 42 |
+| `14-news.txt` | Независимые СМИ: BBC, DW, Meduza, Настоящее время, Беллингкэт и др. | 184 |
 | `telegram-ip.bat` | IP-подсети Telegram для статических маршрутов | 9 |
 | `meta-ip.bat` | IP-подсети Meta (Instagram, Facebook, WhatsApp) для звонков | 34 |
 
@@ -34,7 +37,7 @@
 1. **Удалите старые IP-маршруты**: «Маршрутизация» → отметить старые маршруты → «Удалить».
 2. **Добавьте списки доменов.** В веб-интерфейсе откройте маршрутизацию по доменам
    (DNS-маршруты), создайте список, вставьте содержимое файла и выберите
-   VPN-подключение. Повторите для каждого файла `01`–`11`. Ненужные списки можно
+   VPN-подключение. Повторите для каждого файла `01`–`14`. Ненужные списки можно
    не добавлять.
 3. **Добавьте Telegram.** Приложение Telegram подключается к серверам по IP, а не
    по доменам, поэтому для него нужны статические маршруты. Загрузите
